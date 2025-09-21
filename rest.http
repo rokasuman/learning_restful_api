@@ -1,0 +1,35 @@
+@urlEP = http://localhost:8000/api/v1/users
+
+### Get request
+GET {{urlEP}}?id=8&fName=Gary   
+
+
+### Post user request 
+POST {{urlEP}}
+Content-Type: application/json
+Authorization: 3245678jhaksflajsf
+
+ {
+            "id": "5",
+            "fName": "Sam",
+            "lName": "srmith"
+        }
+
+# curl -X POST "http://localhost:8000" -H "Content-Type: application/json" -d '{ "id": "5", "fName": "Sam", "lName": "srmith" }'
+
+
+### Update user request
+PUT  {{urlEP}}
+Content-Type: application/json
+Authorization: 890765ajsklfajslfj
+
+{
+    "id": 2,
+    "fName": "Lary"
+}
+
+
+
+### Post user request
+DELETE  {{urlEP}}/lkjhgf
+ 
